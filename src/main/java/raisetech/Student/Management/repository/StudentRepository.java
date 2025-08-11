@@ -21,7 +21,7 @@ public interface StudentRepository {
   @Select("SELECT * FROM students")
   List<Student> search();
 
-  @Select("SELECT * FROM students WHERE age>=30")
+  @Select("SELECT * FROM students WHERE age=30")
   List<Student> searchlist();
 
   @Select("SELECT * FROM student_courses")
